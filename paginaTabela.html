@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praticaTabela</title>
+</head>
+
+<body>
+    <section class="section-home">
+
+        <aside class="section-home__sidemenu">
+            <div class="section-home__sidemenu-container">
+                <div class="section-home__sidemenu-top">
+                    <i class="fa-regular fa-bell" style="color: #566071;"></i>
+                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                </div>
+                <div class="section-home__sidemenu-user">
+                    <figure>
+                        <img class="section-home__sidemenu-image" src="userImage.jpeg" alt="user image">
+                    </figure>
+
+                    <p>Lance Newman</p>
+
+                </div>
+
+                <ul class="section-home__sidemenu-options">
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-calendar" style="color: #fcfcfc;"></i>
+                            <p>Schedule</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-bell-concierge" style="color: #fcfcfc;"></i>
+                            <p>Orders</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                            <p>Customers</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-briefcase" style="color: #ffffff;"></i>
+                            <p>Employees</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-scissors" style="color: #ffffff;"></i>
+                            <p>Services</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-paperclip" style="color: #ffffff;"></i>
+                            <p>Products</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                    <li class="section-home__sidemenu-components">
+                        <div class="section-home__sidemenu-inner-components">
+                            <i class="fa-solid fa-parachute-box" style="color: #ffffff;"></i>
+                            <p>Supplies</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="section-home__mainpage">
+            <div class="section-home__mainpage-container">
+                <div id="wrapper" class="section-home__mainpage-wrapper">
+
+                    <div class="section-home__mainpage-title">
+                        <h1>Services</h1>
+                    </div>
+                    <form class="section-home__mainpage-form">
+                        <input class="section-home__mainpage-input" placeholder="Search customers"></input>
+                        <button class="section-home__mainpage-button"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #fafafa;"></i></button>
+                    </form>
+
+                    <div class="section-home__mainpage-container-table-fixed">
+                        <table class="section-home__mainpage-container-table">
+                            <thead class="section-home__mainpage-container-table-head">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody onclick="openPopUp()">
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                                <tr class="section-home__mainpage-container-table-content">
+                                    <td>Miguel Luiz</td>
+                                    <td>000.000.000-00</td>
+                                    <td>47992417179</td>
+                                    <td>10.20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                
+                <div id="popup" class="section-home__mainpage-popup">
+                    <div class="section-home__mainpage-popup-wrapper">
+
+                        <p class="section-home__mainpage-popup-title">EDIT SERVICE</p>
+                        <p class="section-home__mainpage-popup-subtitle">Information</p>
+
+                        <div class="section-home__mainpage-popup-forms">
+                            <form class="section-home__mainpage-popup-form1">
+                                <input class="section-home__mainpage-popup-inputs" placeholder="Name">
+                                <input class="section-home__mainpage-popup-input" placeholder="Description">
+
+                            </form>
+                            <form class="section-home__mainpage-popup-form2">
+                                <input class="section-home__mainpage-popup-inputs" placeholder="Price">
+                                <div class="section-home__mainpage-popup-specialForm">
+                                    <input class="section-home__mainpage-popup-category" placeholder="Category">
+                                    <button class="section-home__mainpage-popup-inputbutton">
+                                        <i class="fa-solid fa-angle-down" style="color: #0d0d0d;"></i>
+                                    </button>
+                                </div>
+
+                                <input class="section-home__mainpage-popup-inputs" placeholder="Duration">
+                            </form>
+                        </div>
+
+                        <div class="section-home__mainpage-popup-buttons">
+                            <div class="section-home__mainpage-popup-buttons1">
+                                <i class="fa-regular fa-square" style="color: grey;"></i>
+                                <p>INACTIVE</p>
+                            </div>
+                            <div class="section-home__mainpage-popup-buttons2">
+                                <button class="section-home__mainpage-popup-button1">SAVE</button>
+                                <button onclick="closePopUp()" class="section-home__mainpage-popup-button2">CANCEL</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="utils.js"></script>
+    <script src="home.js"></script>
+
+</body>
+
+</html>
